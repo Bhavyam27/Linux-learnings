@@ -157,6 +157,46 @@ Networking :
    nslookup google.com
    dig google.com
 
+Text Processing Tools:
+
+1.grep – Search for Text Patterns in Files
+
+ grep "pattern" filename
+
+Eg:
+ grep "error" log.txt               # Find lines containing "error"
+ grep -i "error" log.txt            # Case-insensitive
+ grep -r "TODO" /project/           # Recursively search in a directory
+ grep -n "disk" report.txt          # Show line numbers
+
+2. sed – Stream Editor (Find & Replace)
+
+   sed – Stream Editor (Find & Replace)
+
+Eg:
+   sed 's/dev/DevOps/' file.txt             # Replace first 'dev' in each line
+   sed 's/dev/DevOps/g' file.txt            # Replace all 'dev'
+   sed -i 's/old/new/g' file.txt            # Edit file in-place
+   sed -n '2,4p' file.txt                   # Print lines 2 to 4
+
+3. awk – Pattern Scanning & Processing
+
+   awk 'pattern {action}' filename
+
+   Eg:
+   awk '{print $1}' data.txt               # Print first column
+   awk '/error/ {print $0}' log.txt        # Print lines with "error"
+   awk '{print $1, $3}' data.txt           # Print 1st and 3rd columns
+   awk 'BEGIN {print "Start"}'             # Print before processing
+
+
+**Combination of all three**(AWK,SED &GREP)
+
+cat file.txt | grep "error" | awk '{print $1, $2}' | sed 's/Error/Issue/'
+
+
+
+************************************************************************************************************************************
 
 
 
