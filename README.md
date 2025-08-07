@@ -105,6 +105,60 @@ I’m practicing daily to strengthen my foundational skills in Linux, Bash scrip
 
 **DAY-03**
 
+1. zip – Compress Files into a .zip Archive
+
+   zip archive.zip file1.txt file2.txt
+   zip -r folder.zip myfolder/
+
+2. unzip – Extract Files from a .zip Archive
+   unzip archive.zip
+
+3. gzip – Compress a File Using .gz Format
+
+   gzip filename.txt          # Creates filename.txt.gz and deletes original
+   gzip -k filename.txt       # Keeps original file
+
+4. unzip – Decompress .gz Files
+   gunzip filename.txt.gz
+
+5. tar – Archive and Compress Multiple Files
+
+   tar -cvf archive.tar file1 file2         # Create archive
+   tar -xvf archive.tar                     # Extract archive
+   tar -czvf archive.tar.gz folder/        # Create compressed tarball
+   tar -xzvf archive.tar.gz                # Extract compressed tarball
+
+Networking :
+
+1. ping – Test Network Connectivity
+
+   ping google.com
+   ping -c 4 google.com
+
+2. ifconfig / ip addr – Show IP Information
+   ifconfig
+   ip addr
+   
+3. netstat – Show Network Connections (use ss instead in modern systems)
+   netstat -tuln
+   ss -tuln
+
+4. curl – Make HTTP Requests
+   curl https://example.com
+   curl -I https://example.com
+
+5. wget – Download Files
+   wget https://example.com/file.zip
+
+6. traceroute – Trace Route to Host
+   traceroute google.com
+
+7. nslookup / dig – DNS Lookups
+   nslookup google.com
+   dig google.com
+
+
+
 
 
 
