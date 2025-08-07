@@ -7,7 +7,7 @@ I’m practicing daily to strengthen my foundational skills in Linux, Bash scrip
 | 03  | File Mgmt | zip, unzip, gunzip, tar |
 
 
-DAY -1
+**DAY -01**
 
 1. `pwd` – Print Working Directory
    -> Shows the **current directory** you're in.
@@ -73,7 +73,44 @@ DAY -1
    zcat logs.tar.gz                 # view compressed log
    ```
 
-DAY-02
+**DAY-02**
+
+1. Check File Permissions – ls -l
+
+   ls -l filename
+   ex-> -rw-r--r-- 1 user group 1024 Aug  7 12:34 file.txt
+   - = file (d for directory)
+
+   rw- = owner (read/write)
+
+   r-- = group (read-only)
+
+   r-- = others (read-only)
+
+2. Change Permissions – chmod
+
+   chmod u+x script.sh   # Add execute to user
+   chmod g-w file.txt    # Remove write from group
+   chmod o=r file.txt    # Set read-only for others
+
+3. Change Ownership – chown
+
+   chown newuser file.txt         # Change owner
+   chown newuser:newgroup file.txt # Change owner & group
+
+ 4. Change Group – chgrp
+
+    chgrp devs file.txt
+    
+
+**DAY-03**
+
+
+
+
+
+
+
 
 
 
