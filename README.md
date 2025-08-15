@@ -17,7 +17,7 @@ I believe in **learning by doing**, and this GitHub is my living portfolio.
 ## 🌱 Currently Learning  
 - ✅ **AWS Cloud (EC2, S3, IAM, VPC)**
 - ✅ **Linux Command Line**->check branch
-- ✅ **Docker & Kubernetes**(coming soon)**
+- ✅ **Docker & Kubernetes
 - ✅ **CI/CD Pipelines with GitHub Actions**(coming soon)**
 - 🔄 **Terraform (coming soon)**
 
